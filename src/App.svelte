@@ -1,6 +1,7 @@
 <script>
 	import Cardbox from './Cardbox.svelte';
 	import Card from './Card.svelte';
+	import Footer from './Footer.svelte';
 </script>
 
 
@@ -20,3 +21,5 @@
 
 
 </Cardbox>
+
+<Footer/>
