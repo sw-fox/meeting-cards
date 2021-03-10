@@ -1,7 +1,7 @@
 <style>
 	.card {
         width:50%;
-        height: 7em;
+        height: 7.5em;
         float:left;
         padding: 0px;
         padding-top: 1em;
@@ -14,6 +14,12 @@
     div :global(.icon) {
         font-size: 1.8em;
     }
+    @media only screen and (max-width: 800px) {
+        .large-text {
+            padding-top: 0.1em;
+            padding-bottom: 1.9em;
+        }
+    }
     @media only screen and (min-width: 800px) {
         .card {
             width:25%;
@@ -25,13 +31,19 @@
         font-size: 3em;
         height: 100%;
         position: fixed;
+        transition: padding 0.2s;
     }
     @media only screen and (min-height: 500px) {
         .zoomed {
             padding-top: 3em;
         }
     }
-    @media only screen and (min-height: 800px) {
+    @media only screen and (min-height: 650px) {
+        .zoomed {
+            padding-top: 4em;
+        }
+    }
+    @media only screen and (min-width: 500px) and (min-height: 800px) {
         .zoomed {
             padding-top: 8em;
         }
@@ -107,14 +119,17 @@
         icon = faVolumeMute
     }
 
+    //format large texts
+    let largeText = text.length > 20;
+
     //make card zoomable
     let isZoomed = false;
     function zoom() {
         isZoomed = !isZoomed;
-	}
+    }
 </script>
 
-<div class="card {colorClass}" on:click={zoom} class:zoomed="{isZoomed}">
+<div class="card {colorClass}" on:click={zoom} class:zoomed="{isZoomed}" class:large-text="{largeText}">
     <p>{text}</p>
     <Icon class="icon" icon={icon}></Icon>
 </div>
