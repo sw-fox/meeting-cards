@@ -1,0 +1,21 @@
+{
+    "footer":
+    {
+        "close": "Close"
+    },
+    "cards":
+    {
+        "frozen": "You're Frozen",
+        "bad_connection": "Bad connection",
+        "cant_hear_you": "Can't hear you",
+        "yes": "Yes",
+        "no": "No",
+        "please_mute": "Please MUTE",
+        "background_noise": "Someone has background noise",
+        "brb": "Be right back",
+        "please_repeat": "Please repeat",
+        "slow_down": "Slow down",
+        "speed_up": "Speed up",
+        "you_are_mute": "You're on MUTE"
+    }
+}

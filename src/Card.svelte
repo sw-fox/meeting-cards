@@ -76,7 +76,6 @@
     import { faVolumeMute } from '@fortawesome/free-solid-svg-icons/faVolumeMute'
     import Icon from 'fa-svelte'
 
-	export let text;
     export let color;
     export let symbol;
     
@@ -119,9 +118,6 @@
         icon = faVolumeMute
     }
 
-    //format large texts
-    let largeText = text.length > 20;
-
     //make card zoomable
     let isZoomed = false;
     function zoom() {
@@ -129,7 +125,7 @@
     }
 </script>
 
-<div class="card {colorClass}" on:click={zoom} class:zoomed="{isZoomed}" class:large-text="{largeText}">
-    <p>{text}</p>
+<div class="card {colorClass}" on:click={zoom} class:zoomed={isZoomed}>
+    <p><slot></slot></p>
     <Icon class="icon" icon={icon}></Icon>
 </div>

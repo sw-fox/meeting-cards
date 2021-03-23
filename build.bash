@@ -5,6 +5,7 @@ npm install
 npm run build
 
 # move files to pages folder
+rm -r ./docs
 cp -R ./public/ ./docs
 
 # push generated files to pages folder

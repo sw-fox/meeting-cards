@@ -2,22 +2,23 @@
 	import Cardbox from './Cardbox.svelte';
 	import Card from './Card.svelte';
 	import Footer from './Footer.svelte';
+	import I18n from './i18n/I18n.svelte';
 </script>
 
 
 <Cardbox>
-	<Card color={"green"} symbol={"frozen"} text={"You're Frozen"}/>
-	<Card color={"red"} symbol={"wifi"} text={"Bad connection"}/>
-	<Card color={"yellow"} symbol={"deaf"} text={"Can't hear you"}/>
-	<Card color={"green"} symbol={"thumbUp"} text={"Yes"}/>
-	<Card color={"red"} symbol={"thumbDown"} text={"No"}/>
-	<Card color={"yellow"} symbol={"mute"} text={"Please MUTE"}/>
-	<Card color={"green"} symbol={"noise"} text={"someone has background noise"}/>
-	<Card color={"red"} symbol={"pause"} text={"Be right back"}/>
-	<Card color={"yellow"} symbol={"redo"} text={"please repeat"}/>
-	<Card color={"green"} symbol={"backward"} text={"slow down"}/>
-	<Card color={"red"} symbol={"forward"} text={"speed up"}/>
-	<Card color={"yellow"} symbol={"volumeMute"} text={"You're on MUTE"}/>
+	<Card color={"green"} symbol={"frozen"}><I18n key="cards.frozen"/></Card>
+	<Card color={"red"} symbol={"wifi"}><I18n key="cards.bad_connection"/></Card>
+	<Card color={"yellow"} symbol={"deaf"}><I18n key="cards.cant_hear_you"/></Card>
+	<Card color={"green"} symbol={"thumbUp"}><I18n key="cards.yes"/></Card>
+	<Card color={"red"} symbol={"thumbDown"}><I18n key="cards.no"/></Card>
+	<Card color={"yellow"} symbol={"mute"}><I18n key="cards.please_mute"/></Card>
+	<Card color={"green"} symbol={"noise"}><I18n key="cards.background_noise"/></Card>
+	<Card color={"red"} symbol={"pause"}><I18n key="cards.brb"/></Card>
+	<Card color={"yellow"} symbol={"redo"}><I18n key="cards.please_repeat"/></Card>
+	<Card color={"green"} symbol={"backward"}><I18n key="cards.slow_down"/></Card>
+	<Card color={"red"} symbol={"forward"}><I18n key="cards.speed_up"/></Card>
+	<Card color={"yellow"} symbol={"volumeMute"}><I18n key="cards.you_are_mute"/></Card>
 
 
 </Cardbox>

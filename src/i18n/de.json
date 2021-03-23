@@ -1,0 +1,21 @@
+{
+    "footer":
+    {
+        "close": "Schließen"
+    },
+    "cards":
+    {
+        "frozen": "Du bist eingefroren",
+        "bad_connection": "Schlechte Verbindung",
+        "cant_hear_you": "Kann dich nicht hören",
+        "yes": "Ja",
+        "no": "Nein",
+        "please_mute": "Bitte stumm schalten",
+        "background_noise": "Jemand hat Hintergrundgeräusche",
+        "brb": "Bin gleich wieder da",
+        "please_repeat": "Bitte wiederholen",
+        "slow_down": "Etwas langsamer",
+        "speed_up": "Gib Gas",
+        "you_are_mute": "Du bist stumm"
+    }
+}
