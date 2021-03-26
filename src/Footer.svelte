@@ -56,11 +56,14 @@
     import { faFlag } from '@fortawesome/free-solid-svg-icons/faFlag'
     import { faEllipsisV } from '@fortawesome/free-solid-svg-icons/faEllipsisV'
     import Icon from 'fa-svelte'
+	import * as package_json from "../package.json";
 
 	let language_value;
     language.subscribe(value => {
 		language_value = value;
 	});
+
+    let version = package_json['version']
     
     let info = faInfo
     let menu = faEllipsisV
@@ -84,7 +87,7 @@
 <div class="footer" class:hidden="{menuToggle}">
     <div class="menu" class:hidden="{menuToggle}">
         <div class="line">
-            <Icon icon={info}></Icon><span class="text">v1.1.0</span>
+            <Icon icon={info}></Icon><span class="text">v{version}</span>
         </div>
         {#if language_value!=="de"}
         <div class="line" on:click={changeLanguageDE}>
