@@ -17,8 +17,12 @@
 	<Card color={"red"} symbol={"pause"}><I18n key="cards.brb"/></Card>
 	<Card color={"yellow"} symbol={"redo"}><I18n key="cards.please_repeat"/></Card>
 	<Card color={"green"} symbol={"backward"}><I18n key="cards.slow_down"/></Card>
-	<Card color={"red"} symbol={"forward"}><I18n key="cards.speed_up"/></Card>
-	<Card color={"yellow"} symbol={"volumeMute"}><I18n key="cards.you_are_mute"/></Card>
+	<Card color={"red"} symbol={"awesome"}><I18n key="cards.awesome"/></Card>
+	<Card color={"yellow"} symbol={"volumeMute"}><I18n key="cards.you_are_mute"/></Card>	
+	<Card color={"green"} symbol={"toPoint"}><I18n key="cards.get_to_point"/></Card>
+	<Card color={"red"} symbol={"times"}><I18n key="cards.red_card"/></Card>
+	<Card color={"yellow"} symbol={"back"}><I18n key="cards.back_to_topic"/></Card>
+	<Card color={"green"} symbol={"forward"}><I18n key="cards.speed_up"/></Card>
 
 
 </Cardbox>

@@ -74,6 +74,10 @@
     import { faForward } from '@fortawesome/free-solid-svg-icons/faForward'
     import { faBackward } from '@fortawesome/free-solid-svg-icons/faBackward'
     import { faVolumeMute } from '@fortawesome/free-solid-svg-icons/faVolumeMute'
+    import { faHeart } from '@fortawesome/free-solid-svg-icons/faHeart'
+    import { faHandPointRight } from '@fortawesome/free-solid-svg-icons/faHandPointRight'
+    import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes'
+    import { faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons/faAngleDoubleLeft'
     import Icon from 'fa-svelte'
 
     export let color;
@@ -116,6 +120,14 @@
         icon = faBackward
     }else if(symbol == "volumeMute"){
         icon = faVolumeMute
+    }else if(symbol == "awesome"){
+        icon = faHeart
+    }else if(symbol == "toPoint"){
+        icon = faHandPointRight
+    }else if(symbol == "times"){
+        icon = faTimes
+    }else if(symbol == "back"){
+        icon = faAngleDoubleLeft
     }
 
     //make card zoomable

@@ -16,6 +16,10 @@
         "please_repeat": "Please repeat",
         "slow_down": "Slow down",
         "speed_up": "Speed up",
-        "you_are_mute": "You're on MUTE"
+        "you_are_mute": "You're on MUTE",
+        "get_to_point": "Get to the point",
+        "red_card": "Red card",
+        "back_to_topic": "Back to topic",
+        "awesome": "Awesome"
     }
 }

@@ -11,7 +11,7 @@ cp -R ./public/ ./docs
 # push generated files to pages folder
 git add ./docs
 
-git commit -m "deploy page"
-git push
+#git commit -m "deploy page"
+#git push
 
 
