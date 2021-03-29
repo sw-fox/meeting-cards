@@ -77,10 +77,10 @@
     }
 
     function changeLanguageDE() {
-        language.set('de');
+        language.setLanguage('de');
 	}
     function changeLanguageEN() {
-        language.set('en');
+        language.setLanguage('en');
     }
 </script>
 
