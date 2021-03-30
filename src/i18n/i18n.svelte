@@ -39,4 +39,4 @@
 	}
 </script>
 
-{translate(language_value,key)}
+{@html translate(language_value,key)}

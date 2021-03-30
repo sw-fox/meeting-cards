@@ -8,8 +8,17 @@
         padding-bottom: 1em;
         font-size: 2em;
         text-align: center;
-        color:white;
-        background-color: black;
+        color:#eee;
+        background-color: #084C61;
+    }
+    p{
+        margin: 0.2em;
+        margin-top: 0.8em;
+        min-height: 2.5em;
+    }
+    .zoomed p{
+        margin: 0.4em;
+        margin-bottom: 1em;
     }
     div :global(.icon) {
         font-size: 1.8em;
@@ -48,15 +57,22 @@
             padding-top: 8em;
         }
     }
-    .iteragenta{
-        background-color: #9d1681;
+    .red{
+        background-color: #DB3A34;
     }
-    .mint{
-        background-color: #00b2bb;
+    .green{
+        background-color: #177E89;
+        color:#222;
     }
     .yellow{
-        background-color: #ffe500;
-        color:black;
+        background-color: #FFC857;
+        color:#222;
+    }
+    .blue{
+        background-color: #084C61;
+    }
+    .brown{
+        background-color: #323031;
     }
 </style>
 
@@ -86,11 +102,15 @@
     //set color
     let colorClass;
     if(color == "green"){
-        colorClass = "mint";
+        colorClass = "green";
     }else if(color == "red"){
-        colorClass = "iteragenta";
+        colorClass = "red";
     }else if(color == "yellow"){
         colorClass = "yellow";
+    }else if(color == "blue"){
+        colorClass = "blue";
+    }else if(color == "brown"){
+        colorClass = "brown";
     }
 
     //icon

@@ -8,8 +8,8 @@
        transition: 0.3s;
     }
     .footer:not(.hidden){
-       background-color: #333;
-       color: #ddd;
+       background-color: #222;
+       color: #eee;
        width: 80%;
     }
     @media only screen and (min-width: 600px) {
@@ -18,11 +18,11 @@
         }
     }
     a, a:visited{
-        color: #ddd;
+        color: #eee;
         text-decoration: none;
     }
     .line:hover, a:hover, a:active{
-        color: #00b2bb;
+        color: #177E89;
         transition: color 0.5s;
         cursor: pointer;
     }
